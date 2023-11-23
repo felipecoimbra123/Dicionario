@@ -25,6 +25,10 @@ h1 {
     font-weight: 100;
 }
 
+div > h1 {
+    margin-top: 40px;
+}
+
 h2 {
     font-size: 30px;
     width: 140px;
@@ -37,27 +41,17 @@ h2 {
     cursor: pointer;
 }
 
+h3 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'inter', sans-serif;
+    margin-top: 80px;
+}
+
 p {
     font-size: 26px;
     text-align: center;
-}
-
-.palavrasEng {
-    display: grid;
-    place-items: center;
-    gap: 40px;
-    margin-top: 40px;
-    grid-template-columns: 1fr 1fr;
-}
-
-.exemploDialogo {
-    background-color: #41729F;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    padding: 40px;
-    font-weight: 400;
-    font-family: 'Oswald', sans-serif;
 }
 
 div > p {
@@ -72,8 +66,38 @@ span {
     background-color: rgb(39, 38, 38);
 }
 
-div > h1 {
+
+button {
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.palavrasEng {
+    display: grid;
+    place-items: center;
+    gap: 40px;
     margin-top: 40px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.palavraIngles {
+    color: whitesmoke;
+}
+
+.palavraPortugues {
+    color: whitesmoke;
+}
+
+.exemploDialogo {
+    background-color: #41729F;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
 }
 
 .modeloPalavra {
@@ -103,4 +127,14 @@ div > h1 {
 
 .abrirAba {
     cursor: pointer;
+}
+
+.explicacaoIngles {
+    color: white;
+    font-size: 20px;
+}
+
+.explicacaoPortugues {
+    color: white;
+    font-size: 20px;
 }
