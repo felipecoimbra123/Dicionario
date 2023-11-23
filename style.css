@@ -25,10 +25,6 @@ h1 {
     font-weight: 100;
 }
 
-div > h1 {
-    margin-top: 40px;
-}
-
 h2 {
     font-size: 30px;
     width: 140px;
@@ -60,6 +56,7 @@ div > p {
 
 }
 
+
 span {
     margin-left: 10px;
     border-radius: 10px;
@@ -80,6 +77,10 @@ button {
     gap: 40px;
     margin-top: 40px;
     grid-template-columns: 1fr 1fr;
+}
+
+.palavrasEng :hover {
+    background-color: #41729F;
 }
 
 .palavraIngles {
@@ -110,6 +111,7 @@ button {
     border-radius: 15px;
     top: 50%;
     left: 50%;
+    padding: 15px;
     transform: translate(-50%, -50%);
     z-index: 10;
 }
@@ -130,11 +132,19 @@ button {
 }
 
 .explicacaoIngles {
-    color: white;
-    font-size: 20px;
+    font-family: 'inter', sans-serif;
+    font-size: 25px;
 }
 
 .explicacaoPortugues {
-    color: white;
-    font-size: 20px;
+    font-family: 'inter', sans-serif;
+    font-size: 25px;
+}
+
+.modeloCabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 55px;
 }
