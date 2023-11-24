@@ -4,6 +4,8 @@ const fundoSite = document.querySelector('.fundoDicionario')
 const abaDicionario = document.querySelector('.abrirAba')
 const exemploDialogos = document.querySelector('.exemploDialogo')
 
+let audioIngles
+let audioPortugues
 
 for(let posicao = 0; posicao < palavrasEng.length; posicao++) {
     palavrasEng[posicao].addEventListener('click', (e) => {
@@ -47,25 +49,26 @@ for(let posicao = 0; posicao < palavrasEng.length; posicao++) {
         }
         else if(e.target.textContent == "Reign"){
             palavrasPortugues.textContent = "Reinado"
-            explicacaoIngles.textContent = "Government of a sovereign"
-            explicacaoPortugues.textContent = "Governo de um soberano"
+            explicacaoIngles.textContent = "Government of a sovereign."
+            explicacaoPortugues.textContent = "Governo de um soberano."
         }
         else if(e.target.textContent == "Had"){
             palavrasPortugues.textContent = "Tive"
-            explicacaoIngles.textContent = ""
-            explicacaoPortugues.textContent = ""
+            explicacaoIngles.textContent = "Possessed, obtained, acquired, enjoyed, held, maintained, kept, experienced, effected."
+            explicacaoPortugues.textContent = "Possuí, obtive, adquiri, desfrutei, detive, mantive, guardei, experienciei, efetuei."
         }
         else if(e.target.textContent == "Portrait"){
             palavrasPortugues.textContent = "Retrato"
-            explicacaoIngles.textContent = ""
-            explicacaoPortugues.textContent = ""
+            explicacaoIngles.textContent = "Image of a person (real or imaginary), reproduced by painting, drawing, photography, etc.; artistic work in which this image is reproduced."
+            explicacaoPortugues.textContent = "Imagem de uma pessoa (real ou imaginária), reproduzida por pintura, desenho, fotografia etc; obra artística em que se reproduz essa imagem."
         }
-        else if(e.target.textContent == "Proprety"){
+        else if(e.target.textContent == "Property"){
             palavrasPortugues.textContent = "Propriedade"
-            explicacaoIngles.textContent = ""
-            explicacaoPortugues.textContent = ""
+            explicacaoIngles.textContent = "Special attribute; faculty, character, characteristic; inherent quality of beings."
+            explicacaoPortugues.textContent = "Atributo especial; faculdade, caráter, característica; qualidade inerente aos seres."
         }
         palavrasIngles.textContent = e.target.textContent
+        audioIngles = new Audio("Audios/" + e.target.textContent.toLowerCase() + ".ogg")
     })
 }
 
@@ -85,4 +88,15 @@ abaDicionario.addEventListener('click', (e) => {
         exemploDialogos.style.display = "flex"
         abertoDicionario = true
     }
+})
+
+const botaoAudioPortugues = document.querySelector('.botaoAudioPortugues')
+const botaoAudioIngles = document.querySelector('.botaoAudioIngles')
+
+
+botaoAudioPortugues.addEventListener('click', (e) => {
+    audioPortugues.play()
+})
+botaoAudioIngles.addEventListener('click', (e) => {
+    audioIngles.play()
 })
