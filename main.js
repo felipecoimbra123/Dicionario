@@ -69,7 +69,7 @@ for(let posicao = 0; posicao < palavrasEng.length; posicao++) {
         }
         palavrasIngles.textContent = e.target.textContent
         audioIngles = new Audio("Audios/" + e.target.textContent.toLowerCase() + ".ogg")
-        audioPortugues = new Audio("Audios/" + e.target.palavrasPortugues.toLowerCase() + ".ogg")
+        audioPortugues = new Audio("Audios/" + palavrasPortugues.textContent.toLowerCase() + ".ogg")
     })
 }
 
