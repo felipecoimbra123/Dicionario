@@ -148,3 +148,24 @@ button {
     gap: 30px;
     margin-top: 55px;
 }
+
+.abaFrases {
+    margin: auto;
+    border: none;
+    border-radius: 30px;
+    background-color: #41729F;
+    width: 900px;
+    height: 400px;
+}
+
+.frasePortugues {
+    font-size: 35px;
+    color: white;
+    margin-top: 15px;
+}
+
+.fraseIngles {
+    color: white;
+    font-size: 35px;
+    margin-top: 15px;
+}
