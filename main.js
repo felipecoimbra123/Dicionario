@@ -126,12 +126,14 @@ abaDicionario.addEventListener('click', (e) => {
 const botaoAudioPortugues = document.querySelector('.botaoAudioPortugues')
 const botaoAudioIngles = document.querySelector('.botaoAudioIngles')
 
+
 botaoAudioPortugues.addEventListener('click', (e) => {
-    audioPortugues.play()
+    if(audioIngles.paused) {
+        audioPortugues.play()
+    }
 })
 botaoAudioIngles.addEventListener('click', (e) => {
-    audioIngles.play()
-})
-botaoAudioIngles.addEventListener('click', (e) => {
-    audioIngles.play()
+    if(audioPortugues.paused) {
+        audioIngles.play()
+    }
 })
